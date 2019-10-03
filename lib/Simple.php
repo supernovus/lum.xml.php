@@ -1,9 +1,9 @@
 <?php
 
-namespace Lum;
+namespace Lum\XML;
 
 /**
- * Common XML Functions.
+ * Simple XML Functions.
  *
  * I like SimpleXML, it's, well, simple. Sometimes however, it's too simple
  * and I need some DOM-juice to turn it up a notch. Well, this is a collection
@@ -11,7 +11,7 @@ namespace Lum;
  *
  * If you need more than this, use SimpleDOM (lum/simpledom).
  */
-class XML
+class Simple
 {
   /**
    * Append one node to another.
