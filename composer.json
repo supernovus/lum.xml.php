@@ -22,6 +22,10 @@
   {
     "lum/lum-test": "^2.1 || dev-master"
   },
+  "suggest":
+  {
+    "lum/simpledom": "A wrapper for the SimpleXML/DOM classes"
+  },
   "autoload":
   {
     "psr-4":
