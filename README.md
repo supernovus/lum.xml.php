@@ -8,7 +8,7 @@ XML related libraries.
 
 | Class                   | Description                                       |
 | ----------------------- | ------------------------------------------------- |
-| Lum\XML                 | A bunch of simple XML helpers.                    |
+| Lum\XML\Simple          | A bunch of simple XML helpers.                    |
 | Lum\XML\UTF8NCR         | Convert extended UTF-8 characters into NCR.       |
 
 ## TODO
