@@ -94,7 +94,7 @@ class UTF8NCR
    */    
   public static function encode_utf8_char ($c) 
   { //m. perez 
-    $h = ord($c{0});    
+    $h = ord($c[0]);    
     if ($h <= 0x7F) 
     { 
       return $c;
@@ -106,20 +106,20 @@ class UTF8NCR
             
     if ($h <= 0xDF) 
     {
-      $h = ($h & 0x1F) << 6 | (ord($c{1}) & 0x3F);
+      $h = ($h & 0x1F) << 6 | (ord($c[1]) & 0x3F);
       $h = "&#" . $h . ";";
       return $h; 
     } 
     else if ($h <= 0xEF) 
     {
-      $h = ($h & 0x0F) << 12 | (ord($c{1}) & 0x3F) << 6 | (ord($c{2}) & 0x3F);
+      $h = ($h & 0x0F) << 12 | (ord($c[1]) & 0x3F) << 6 | (ord($c[2]) & 0x3F);
       $h = "&#" . $h . ";";
       return $h;
     } 
     else if ($h <= 0xF4) 
     {
-      $h = ($h & 0x0F) << 18 | (ord($c{1}) & 0x3F) << 12 
-        | (ord($c{2}) & 0x3F) << 6 | (ord($c{3}) & 0x3F);
+      $h = ($h & 0x0F) << 18 | (ord($c[1]) & 0x3F) << 12 
+        | (ord($c[2]) & 0x3F) << 6 | (ord($c[3]) & 0x3F);
       $h = "&#" . $h . ";";
       return $h;
     }
