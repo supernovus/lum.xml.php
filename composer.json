@@ -12,11 +12,9 @@
   ],
   "require":
   {
-    "php": "^7.0 || ^8.0",
     "ext-mbstring": "*",
-    "ext-xml": "*",
-    "ext-SimpleXML": "*",
-    "ext-dom": "*"
+    "lum/lum-compat": "^1.0",
+    "lum/simpledom": "^2.0"
   },
   "require-dev":
   {
