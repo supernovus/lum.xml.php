@@ -14,7 +14,7 @@
   {
     "ext-mbstring": "*",
     "lum/lum-compat": "^2.0",
-    "lum/simpledom": "^2.1"
+    "lum/simpledom": "^2.1 || ^3.0"
   },
   "require-dev":
   {
